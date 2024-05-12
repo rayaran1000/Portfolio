@@ -1,13 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+import ProjectCards1 from "./ProjectCards1";
+import ProjectCards2 from "./ProjectCards2";
+import ProjectCards3 from "./ProjectCards3";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import churn from "../../Assets/Projects/churn.png";
+import sales from "../../Assets/Projects/sales.png";
+import sentimentanalysis from "../../Assets/Projects/sentimentanalysis.png";
+import spam from "../../Assets/Projects/spammail.png";
+import summarizer from "../../Assets/Projects/summarizer.png";
+import toxiccomment from "../../Assets/Projects/toxiccomment.png";
+import alzheimers from "../../Assets/Projects/alzheimers.png"
 
 function Projects() {
   return (
@@ -22,74 +25,92 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chatify}
+            <ProjectCards1
+              imgPath={churn}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Churn Prediction"
+              description="This project aims in identifying patterns, factors, and trends that contribute to customer churn, which occurs when customers discontinue their engagement with a product, service, or brand. By analyzing this data, we uncover insights into customer behavior, preferences, and pain points that may lead to churn."
+              ghLink="https://github.com/rayaran1000/Telecom-Churn-Prediction"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
+            <ProjectCards1
+              imgPath={sales}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Sales Prediction"
+              description="This project aims in generating accurate predictions of future sales to facilitate effective business planning, inventory management, and resource allocation along with identifying and analyzing key drivers influencing sales, including seasonality, promotions, economic factors, and external events, to enhance forecasting accuracy."
+              ghLink="https://github.com/rayaran1000/Sales-Prediction"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
+            <ProjectCards1
+              imgPath={sentimentanalysis}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="IMDB Movie Review Sentiment Analysis"
+              description="This project aims in web Scraping IMDB Movie Reviews for a particular movie, Cleaning of the data and displaying them in a tabular format along with Sentiment Analysis and Factuality analysis of the reviews predicted"
+              ghLink="https://github.com/rayaran1000/IMDB-Movie-Review-Sentiment-Analysis"            
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
+            <ProjectCards1
+              imgPath={spam}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Spam/Ham Email Classification"
+              description="This project aims in efficient collection and cleaning of a diverse set of spam and ham emails, along with efficient analysis of the data and accurate classification of the emails into Spam/Ham leading to huge impact in the messaging and data industry"
+              ghLink="https://github.com/rayaran1000/Email-Spam-Classification"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
+            <ProjectCards2
+              imgPath={summarizer}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Dialogue Summarizer"
+              description="This project aims in implementing text summarization using the Google pegasus-cnn_dailymail model from Hugging Face, fine-tuned on the SamSum dataset. Text summarization is the process of condensing a piece of text into a shorter version while retaining its key information. The Pegasus model, based on transformer architecture, has shown promising results in various natural language processing tasks, including summarization."
+              ghLink="https://github.com/rayaran1000/Dialogue-Text-Summarizer"
+              gcLink="https://colab.research.google.com/drive/1pjWTNaVdjVjdNqFeS6MdzP3Nq8lJcR5-#scrollTo=-tdcDS_DA7T2"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
+            <ProjectCards2
+              imgPath={toxiccomment}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Multi Label Toxic Comment Classification"
+              description="This project aims to implement multi label text classification using the Distilbert model from Hugging Face, fine-tuned on the Toxic Comment Jigsaw dataset. Text classification is the process of classifying a piece of text into a set of target labels. The Distilbert model, based on transformer architecture, has shown promising results in various natural language processing tasks, including text classification. Distilbert is a distilled version of BERT Model. Distillation(compression of the model) consists of the model weights being decreased, while maintaining almost similar performance as the big model"
+              ghLink="https://github.com/rayaran1000/Toxic-Comment-Classifier"
+              gcLink="https://colab.research.google.com/drive/17jBmSD8nbYORLryD2ww80-ZWYiylK_3Z"
             />
           </Col>
         </Row>
       </Container>
+    <Container>
+      <h1 className="project-heading">
+          Open Source <strong className="purple">Contributions</strong>
+      </h1>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCards3
+              imgPath={alzheimers}
+              isBlog={false}
+              title="Analyzing Brain Scan Images for the Early Detection and Diagnosis of Alzheimer's Disease "
+              description="The goal of this project was to leverage the power of artificial intelligence,
+              specifically machine learning and computer vision techniques, to analyze
+              brain scan images for the early detection and diagnosis of Alzheimer's
+              disease. The aim was to create an AI model that can analyze these images, identify
+              patterns that may be indicative of these disorders, and make predictions
+              with high accuracy. The expectation is that such a tool could supplement existing diagnostic
+              practices, providing a more objective and potentially earlier indication of these
+              diseases."
+              demoLink="https://huggingface.co/spaces/arpy8/Omdena_Toronto_Streamlit_App"
+            />
+          </Col>
+        </Row>
     </Container>
+  </Container>
   );
 }
 
