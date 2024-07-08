@@ -10,6 +10,7 @@ import sentimentanalysis from "../../Assets/Projects/sentimentanalysis.png";
 import spam from "../../Assets/Projects/spammail.png";
 import summarizer from "../../Assets/Projects/summarizer.png";
 import toxiccomment from "../../Assets/Projects/toxiccomment.png";
+import exochat from "../../Assets/Projects/exochat.png";
 import alzheimers from "../../Assets/Projects/alzheimers.png"
 
 function Projects() {
@@ -25,42 +26,25 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
-            <ProjectCards1
-              imgPath={churn}
+            <ProjectCards2
+              imgPath={exochat}
               isBlog={false}
-              title="Churn Prediction"
-              description="This project aims in identifying patterns, factors, and trends that contribute to customer churn, which occurs when customers discontinue their engagement with a product, service, or brand. By analyzing this data, we uncover insights into customer behavior, preferences, and pain points that may lead to churn."
-              ghLink="https://github.com/rayaran1000/Telecom-Churn-Prediction"
+              title="ExoChat - ExoPlanet Chatbot"
+              description="This project aims to provide accurate text information about exoplanets present in the NASA Public Exoplanet archive using the Google Gemini 2 billion Instruction tuned model from Hugging Face. The Gemini 2billion model, based on transformer decoder architecture, has shown promising results in various natural language processing tasks, including text generation.
+                          We are currently using the Gemini 2 billion parameter model, which is the smaller model in the Gemini model family. The model is instruction fine tuned so that it can be further finetuned based on the format of {prompt, context and response}."
+              ghLink="https://github.com/rayaran1000/Exoplanet-Chatbot"
+              gcLink="https://github.com/rayaran1000/Google-Collab-Experiments"
             />
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCards1
-              imgPath={sales}
+            <ProjectCards2
+              imgPath={toxiccomment}
               isBlog={false}
-              title="Sales Prediction"
-              description="This project aims in generating accurate predictions of future sales to facilitate effective business planning, inventory management, and resource allocation along with identifying and analyzing key drivers influencing sales, including seasonality, promotions, economic factors, and external events, to enhance forecasting accuracy."
-              ghLink="https://github.com/rayaran1000/Sales-Prediction"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards1
-              imgPath={sentimentanalysis}
-              isBlog={false}
-              title="IMDB Movie Review Sentiment Analysis"
-              description="This project aims in web Scraping IMDB Movie Reviews for a particular movie, Cleaning of the data and displaying them in a tabular format along with Sentiment Analysis and Factuality analysis of the reviews predicted"
-              ghLink="https://github.com/rayaran1000/IMDB-Movie-Review-Sentiment-Analysis"            
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCards1
-              imgPath={spam}
-              isBlog={false}
-              title="Spam/Ham Email Classification"
-              description="This project aims in efficient collection and cleaning of a diverse set of spam and ham emails, along with efficient analysis of the data and accurate classification of the emails into Spam/Ham leading to huge impact in the messaging and data industry"
-              ghLink="https://github.com/rayaran1000/Email-Spam-Classification"
+              title="Multi Label Toxic Comment Classification"
+              description="This project aims to implement multi label text classification using the Distilbert model from Hugging Face, fine-tuned on the Toxic Comment Jigsaw dataset. Text classification is the process of classifying a piece of text into a set of target labels. The Distilbert model, based on transformer architecture, has shown promising results in various natural language processing tasks, including text classification. Distilbert is a distilled version of BERT Model. Distillation(compression of the model) consists of the model weights being decreased, while maintaining almost similar performance as the big model"
+              ghLink="https://github.com/rayaran1000/Toxic-Comment-Classifier"
+              gcLink="https://colab.research.google.com/drive/17jBmSD8nbYORLryD2ww80-ZWYiylK_3Z"
             />
           </Col>
 
@@ -76,15 +60,45 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCards2
-              imgPath={toxiccomment}
+            <ProjectCards1
+              imgPath={spam}
               isBlog={false}
-              title="Multi Label Toxic Comment Classification"
-              description="This project aims to implement multi label text classification using the Distilbert model from Hugging Face, fine-tuned on the Toxic Comment Jigsaw dataset. Text classification is the process of classifying a piece of text into a set of target labels. The Distilbert model, based on transformer architecture, has shown promising results in various natural language processing tasks, including text classification. Distilbert is a distilled version of BERT Model. Distillation(compression of the model) consists of the model weights being decreased, while maintaining almost similar performance as the big model"
-              ghLink="https://github.com/rayaran1000/Toxic-Comment-Classifier"
-              gcLink="https://colab.research.google.com/drive/17jBmSD8nbYORLryD2ww80-ZWYiylK_3Z"
+              title="Spam/Ham Email Classification"
+              description="This project aims in efficient collection and cleaning of a diverse set of spam and ham emails, along with efficient analysis of the data and accurate classification of the emails into Spam/Ham leading to huge impact in the messaging and data industry"
+              ghLink="https://github.com/rayaran1000/Email-Spam-Classification"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={sentimentanalysis}
+              isBlog={false}
+              title="IMDB Movie Review Sentiment Analysis"
+              description="This project aims in web Scraping IMDB Movie Reviews for a particular movie, Cleaning of the data and displaying them in a tabular format along with Sentiment Analysis and Factuality analysis of the reviews predicted"
+              ghLink="https://github.com/rayaran1000/IMDB-Movie-Review-Sentiment-Analysis"            
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={sales}
+              isBlog={false}
+              title="Sales Prediction"
+              description="This project aims in generating accurate predictions of future sales to facilitate effective business planning, inventory management, and resource allocation along with identifying and analyzing key drivers influencing sales, including seasonality, promotions, economic factors, and external events, to enhance forecasting accuracy."
+              ghLink="https://github.com/rayaran1000/Sales-Prediction"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={churn}
+              isBlog={false}
+              title="Churn Prediction"
+              description="This project aims in identifying patterns, factors, and trends that contribute to customer churn, which occurs when customers discontinue their engagement with a product, service, or brand. By analyzing this data, we uncover insights into customer behavior, preferences, and pain points that may lead to churn."
+              ghLink="https://github.com/rayaran1000/Telecom-Churn-Prediction"
+            />
+          </Col>
+          
         </Row>
       </Container>
     <Container>
