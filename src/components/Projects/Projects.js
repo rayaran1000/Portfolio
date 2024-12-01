@@ -11,7 +11,10 @@ import spam from "../../Assets/Projects/spammail.png";
 import summarizer from "../../Assets/Projects/summarizer.png";
 import toxiccomment from "../../Assets/Projects/toxiccomment.png";
 import exochat from "../../Assets/Projects/exochat.png";
-import alzheimers from "../../Assets/Projects/alzheimers.png"
+import researchpaperagent from "../../Assets/Projects/researchpaperagent.png"
+import searchsummarizer from "../../Assets/Projects/searchsummarizer.png"
+import coldemailgenerator from "../../Assets/Projects/coldemailgenerator.png"
+import feedbackreviewer from "../../Assets/Projects/feedbackreviewer.png"
 
 function Projects() {
   return (
@@ -25,6 +28,48 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={feedbackreviewer}
+              isBlog={false}
+              title="Feedback Reviewer"
+              description="Feedback Review Analytics is a AI enhanced web application designed to collect and analyze user feedback. It provides insights into customer sentiments, key topics, and emerging trends from feedback. The application includes authentication for users and admins, with admins having access to analytics data."
+              ghLink="https://github.com/rayaran1000/Feedback-Review-Analytics"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={coldemailgenerator}
+              isBlog={false}
+              title="Cold Email Generator"
+              description="The Cold Email Generator project is a tool that automates the process of generating personalized cold emails based on job descriptions scraped from company career pages. The application leverages LangChain with the ChatGroq model for extracting job postings and generating emails. The user's portfolio is stored in a vector store, and relevant portfolio links are attached to the emails based on the job's required skills."
+              ghLink="https://github.com/rayaran1000/Cold-Email-Generator"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={searchsummarizer}
+              isBlog={false}
+              title="Search Summarizer"
+              description="The Search Summarizer project is a tool designed to retrieve and summarize search results from DuckDuckGo. It leverages the Llama 3 model to analyze search results and generate concise summaries, highlighting key topics, features, and important references. The application allows users to save both the raw and summarized search results in MongoDB for future use."
+              ghLink="https://github.com/rayaran1000/Search-Summarizer"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={researchpaperagent}
+              isBlog={false}
+              title="Research Paper Agent"
+              description="The Research Paper Agent is a Generative AI tool designed to assist researchers, academics, and professionals by generating concise summaries of research papers and answering queries based on the document's content.
+              The Research Paper Agent uses the Llama 3 model to generate summaries of research papers. Users can upload a PDF document, which is processed through several text processing steps. The resulting vector embeddings are stored in a FAISS vector store."
+              ghLink="https://github.com/rayaran1000/Research-Paper-Agent"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCards2
               imgPath={exochat}
@@ -101,29 +146,6 @@ function Projects() {
           
         </Row>
       </Container>
-    <Container>
-      <h1 className="project-heading">
-          Open Source <strong className="purple">Contributions</strong>
-      </h1>
-      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCards3
-              imgPath={alzheimers}
-              isBlog={false}
-              title="Analyzing Brain Scan Images for the Early Detection and Diagnosis of Alzheimer's Disease "
-              description="The goal of this project was to leverage the power of artificial intelligence,
-              specifically machine learning and computer vision techniques, to analyze
-              brain scan images for the early detection and diagnosis of Alzheimer's
-              disease. The aim was to create an AI model that can analyze these images, identify
-              patterns that may be indicative of these disorders, and make predictions
-              with high accuracy. The expectation is that such a tool could supplement existing diagnostic
-              practices, providing a more objective and potentially earlier indication of these
-              diseases."
-              demoLink="https://huggingface.co/spaces/arpy8/Omdena_Toronto_Streamlit_App"
-            />
-          </Col>
-        </Row>
-    </Container>
   </Container>
   );
 }

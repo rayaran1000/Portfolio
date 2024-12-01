@@ -17,7 +17,7 @@ import {
   SiOpencv,
   SiFlask,
   SiDjango,
-  SiFastapi,
+  SiFastapi
 } from "react-icons/si";
 
 function Techstack() {

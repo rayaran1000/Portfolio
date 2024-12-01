@@ -9,11 +9,11 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Aranya Ray </span>
-            from <span className="purple"> Haryana, India.</span>
+            from <span className="purple"> NCR, India.</span>
             <br />
             I am currently employed as a software engineer at Cognizant.
             <br />
-            I have completed Bachelors from IIEST, Shibpur. I have also completed M.Tech in Data Science and Engineering
+            I have completed Bachelors from IIEST, Shibpur. I have also completed Masters in Data Science and Engineering
             from BITS Pilani
             <br />
             <br />
