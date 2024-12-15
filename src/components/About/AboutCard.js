@@ -34,7 +34,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "#00e1ff" }}>
             "If Models can learn, then so can we!"{" "}
           </p>
           <footer className="blockquote-footer">Aranya</footer>
