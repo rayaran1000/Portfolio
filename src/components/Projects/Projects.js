@@ -15,6 +15,9 @@ import researchpaperagent from "../../Assets/Projects/researchpaperagent.png"
 import searchsummarizer from "../../Assets/Projects/searchsummarizer.png"
 import coldemailgenerator from "../../Assets/Projects/coldemailgenerator.png"
 import feedbackreviewer from "../../Assets/Projects/feedbackreviewer.png"
+import dataanalyst from "../../Assets/Projects/dataanalyst.png"
+import codeassistant from "../../Assets/Projects/codeassistant.png"
+
 
 function Projects() {
   return (
@@ -29,6 +32,25 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={codeassistant}
+              isBlog={false}
+              title="Code Assistant"
+              description="The AI Code Assistant is a powerful extension for Visual Studio Code that leverages advanced language models to enhance developer productivity. It provides features such as code analysis, debugging, documentation, refactoring, and inline code completion, all integrated seamlessly into the IDE."
+              ghLink="https://github.com/rayaran1000/AI-Code-Assistant-extension"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCards1
+              imgPath={dataanalyst}
+              isBlog={false}
+              title="Artificial Data Analyst"
+              description="Artificial Data Analyst is a web application designed to help users analyze and visualize data using Large Language Models (LLMs). It leverages LIDA (Library for Intelligent Data Analysis) to automatically generate visualizations and infographics from datasets. This application also helps the users to apply feature engineering and feature selection techniques as part of Data Cleaning functionality along with providing a summary of the dataset used. The application includes user authentication, data upload capabilities, data summarization, data cleaning techniques and advanced visualization features."
+              ghLink="https://github.com/rayaran1000/Artificial-Data-Analyst"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCards1
               imgPath={feedbackreviewer}
